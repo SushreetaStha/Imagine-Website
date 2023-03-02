@@ -1,0 +1,137 @@
+.clearfix::after {
+    clear: both;
+    display: table;
+    content: "";
+  }
+
+  @font-face{
+    font-family: Kaushan Script;
+    src: url("KaushanScript-Regular.ttf");
+}
+
+  body{
+    margin:550px;
+    padding: 0px;
+    background: url("im3.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    font-family: sans-serif;
+    background-repeat: none;
+
+}
+
+.signupbox{
+    position: absolute;
+    width: 330px;
+    height: 480px;
+    background-color: #333333;
+    color:#fff;
+    top: 10%;
+    left: 40%;
+    margin: 10px;
+    padding: 45px;
+    border-radius: 5%;
+    box-sizing: border-box;
+    padding: 40px 10px;
+}
+.signupbox>p{
+    position: absolute;
+    margin-top: -20px;
+    text-align: center;
+    margin-left: 28%;
+    font-family: Kaushan Script;
+}
+
+.signupbox>p a{
+    display:block;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 200;
+    width: 110px;
+    font-family: "Kaushan Script";
+    border: 3px solid white;
+    border-radius: 5%;
+    padding-bottom: 4px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 9px;
+    padding: 3px 8px 4px 3px;
+
+}
+
+.signupbox>h1{
+    display: block;
+    font-family: Century;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+
+.signupbox>form>.name p, .mail p, .pass p, .retype p{
+    display:block;
+    font-family: "Trebuchet MS";
+    font-weight: 500;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.signupbox>form> .name>input[type="text"], .mail>input[type="email"], .pass>input[type="password"], .retype>input[type="password"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    margin-top: -12px;
+}
+
+.signupbox>form> .name>input[type="text"]:hover, 
+.mail>input[type="email"]:hover, .pass>input[type="password"]:hover, .retype>input[type="password"]:hover{
+    border-bottom: 3px solid white;
+    
+}
+
+.signupbox>form> .name>input[type="text"]:focus, 
+.mail>input[type="email"]:focus, .pass>input[type="password"]:focus, .retype>input[type="password"]:focus{
+    border-bottom: 3px solid white;
+    
+}
+
+.signupbox>form button{
+    position: absolute;
+    width: 90%;
+    margin-top: 8%;
+    margin-left: 5px;
+    border: none;
+    text-align:center;
+    outline: none;
+    height: 40px;
+    background-color: rgb(175, 58, 58);
+    font-size: 17px;
+    color:white;
+    border-radius: 10px;
+}
+
+.signupbox>form button:hover{
+    cursor: pointer;
+    background-color: rgb(138, 43, 43);
+}
+
+/*javascript*/
+
+.signupbox>form>.name>#demo, .mail>#demo1, .pass>#demo2, .retype>#demo3{
+    position: absolute;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(175, 58, 58);
+    margin-top: -5px;
+    margin-left: 50%;
+}

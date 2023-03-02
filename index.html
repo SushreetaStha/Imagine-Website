@@ -1,0 +1,153 @@
+<html>
+  <head>
+    <title>Imagine</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="head-wrapper">
+        <div class="head-container clearfix">
+          <div class="head-left clearfix">
+            <div class="head-logo"><a href="index.html">Imagine</a></div>
+            <div class="menu">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="submenu">
+                  <a href="#">Discover</a>
+                  <ul>
+                    <li>
+                      <a href="Top Designers/designers.html">Top Users</a>
+                    </li>
+                    <li><a href="Top Posts/post.html">Top Posts</a></li>
+                  </ul>
+                </li>
+                <li><a href="Abt/About.html">About</a></li>
+                <li><a href="Abt/contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="head-right clearfix">
+            <div class="search-bar">
+              <form>
+                <input type="text" placeholder="Search..." />
+              </form>
+            </div>
+            <div class="login-btn">
+              <a href="Log/login.html">Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Carousel -->
+      <div class="image-carousel">
+        <div class="slider">
+          <img src="images/carousel/15.jpg" />
+          <div class="pre" onclick="pre();">&lt;</div>
+          <div class="next" onclick="next();">&gt;</div>
+        </div>
+
+        <div class="slider">
+          <img src="images/carousel/9.jpg" />
+          <div class="pre" onclick="pre();">&lt;</div>
+          <div class="next" onclick="next();">&gt;</div>
+        </div>
+
+        <div class="slider">
+          <img src="images/carousel/8.jpg" />
+          <div class="pre" onclick="pre();">&lt;</div>
+          <div class="next" onclick="next();">&gt;</div>
+        </div>
+
+        <div class="slider">
+          <img src="images/carousel/10.jpg" />
+          <div class="pre" onclick="pre();">&lt;</div>
+          <div class="next" onclick="next();">&gt;</div>
+        </div>
+
+        <div class="slider">
+          <img src="images/carousel/12.jpg" />
+          <div class="pre" onclick="pre();">&lt;</div>
+          <div class="next" onclick="next();">&gt;</div>
+        </div>
+
+        <div class="slider">
+          <img src="images/carousel/13.jpg" />
+          <div class="pre" onclick="pre();">&lt;</div>
+          <div class="next" onclick="next();">&gt;</div>
+        </div>
+
+        <div class="slider">
+          <img src="images/carousel/14.jpg" />
+          <div class="pre" onclick="pre();"></div>
+          <div class="next" onclick="next();">&gt;</div>
+        </div>
+
+        <div class="slider">
+          <img src="images/carousel/16.jpg" />
+          <div class="pre" onclick="pre();">&lt;</div>
+          <div class="next" onclick="next();">&gt;</div>
+        </div>
+      </div>
+
+      <div class="genre-bar" clearfix>
+        <div class="genre">
+          <select>
+            <option><a href="#">Popular</a></option>
+            <option><a href="#">Most Recent</a></option>
+            <option><a href="#">Following</a></option>
+            <option><a href="#">Favourites</a></option>
+          </select>
+        </div>
+        <div class="gnr-list clearfix">
+          <div class="list">
+            <a class="genre-btn" onclick="GenreFilter('all', event)">All</a>
+            <a class="genre-btn" onclick="GenreFilter('animation', event)">
+              Animation
+            </a>
+            <a class="genre-btn" onclick="GenreFilter('illustration', event)">
+              Illustrations
+            </a>
+            <a class="genre-btn" onclick="GenreFilter('mobile', event)"
+              >Mobile</a
+            >
+            <a class="genre-btn" onclick="GenreFilter('webdesign', event)">
+              Web Design
+            </a>
+            <a class="genre-btn" onclick="GenreFilter('food', event)">Food</a>
+            <a class="genre-btn" onclick="GenreFilter('landscape', event)">
+              Landscapes
+            </a>
+            <a class="genre-btn" onclick="GenreFilter('wildlife', event)"
+              >Wildlife</a
+            >
+          </div>
+          <div class="filter">
+            <a href="#">Filters</a>
+          </div>
+        </div>
+      </div>
+      <div class="pictures-container">
+        <div class="pictures clearfix" id="pictureContainer"></div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-wrapper">
+          © 2020 Imagine. All rights reserved.
+        </div>
+      </div>
+
+      <!-- Main Container End -->
+    </div>
+    <script src="js/GenreData.js"></script>
+    <script src="js/ImagesData.js"></script>
+    <script src="js/Global.js"></script>
+    <script src="js/Images.js"></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>

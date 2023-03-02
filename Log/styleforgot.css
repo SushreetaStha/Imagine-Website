@@ -1,0 +1,127 @@
+@font-face{
+    font-family: Kaushan Script;
+    src: url("KaushanScript-Regular.ttf");
+}
+
+body{
+    background-image: url("im3.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main{
+    border: none;
+    position: relative;
+    text-align:center;
+    margin-top: 150px;
+    margin-left: 500px;
+    height: 55%;
+    width: 30%;
+    background-color: #333333;
+    color: white;
+    border-radius: 20px;
+
+}
+
+.main>h4{
+    position: absolute;
+    margin-top: 7%;
+    text-align: center;
+    margin-left: 37%;
+    font-family: Kaushan Script;
+}
+
+.main>h4 a{
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+    font-weight: 200;
+    border: 1px solid white;
+    border-radius: 5%;
+    padding: 3px 8px 4px 3px;
+
+}
+
+.main>h2{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 25%;
+    
+}
+
+.main>p{
+    position: absolute;
+    display: block;
+    margin-top: 33%;
+    font-family: sans-serif;
+    margin-left: 20%;
+
+}
+
+.main>form span{
+    position: absolute;
+    display: block;
+    margin-top: 47%;
+    margin-left: 10%;
+    font-family: sans-serif;
+    font-weight: 600; 
+}
+
+.main>form input[type="email"]{
+    position: absolute;
+    display: block;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    background-color: #333333;
+    text-align: center;
+    height: 30px;
+    width: 250px;
+    outline: none;
+    margin-top: 45%;
+    margin-left: 32%;
+}
+
+.main>form a{
+    position: absolute;
+    display: block;
+    margin-top: 50%;
+    margin-left: 10%;
+    font-family: sans-serif;
+    font-weight: 600; 
+}
+
+.main>form input[type="password"]{
+    position: absolute;
+    display: block;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
+    background-color: #333333;
+    text-align: center;
+    height: 30px;
+    width: 250px;
+    outline: none;
+    margin-top: 49%;
+    margin-left: 32%;
+}
+
+.main>form button{
+    position: absolute;
+    display: block;
+    outline: none;
+    margin-top: 55%;
+    margin-left: 35%;
+    color: white;
+    background-color: rgb(175, 58, 58);
+    border: 1px solid rgb(175, 58, 58);
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.main>form button:hover{
+    background-color: rgb(138, 43, 43);
+    cursor: pointer;
+}
+

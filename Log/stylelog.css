@@ -1,0 +1,221 @@
+.clearfix::after {
+    clear: both;
+    display: table;
+    content: "";
+  }
+
+  @font-face{
+      font-family: Kaushan Script;
+      src: url("KaushanScript-Regular.ttf");
+  }
+
+  body{
+    margin:0px;
+    padding: 0px;
+    background: url("im3.jpg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: none;
+}
+
+.loginbox{
+    position: absolute;
+    width: 330px;
+    height: 430px;
+    background-color: #333333;
+    color:#fff;
+    top: 10%;
+    left: 40%;
+    margin: 10px;
+    padding: 45px;
+    border-radius: 5%;
+    box-sizing: border-box;
+    padding: 20px 15px;
+}
+
+.loginbox>.logo>p{
+    margin-top: 0px;
+    margin-left: 95px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 110px;
+    font-size: 30px;
+    font-weight: 200;
+    font-family: "san-serif";
+    border: 1px solid white;
+    border-radius: 9px;
+    padding: 3px 8px 4px 3px;
+}
+
+.loginbox>.logo>p a{
+    text-decoration: none;
+    color: white;
+}
+
+.loginbox>h1{
+    font-family: san-serif;
+    margin: 8px;
+    padding:0px 0px 20px 0px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+.loginbox>form>.name p{
+    margin-left: 5px;
+    margin-top: -20px;
+    font-weight: bold;
+    font-family: "san-serif";
+    font-size: 17px;
+}
+
+.loginbox>form> input::placeholder{
+    color:white;
+}
+
+.loginbox>form .name>input[type="text"], .pass>input[type="password"]{
+    display: block;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+
+.loginbox>form .name>input[type="text"]:hover, .pass>input[type="password"]:hover{
+    height: 45px;
+    border-bottom: 3px solid white;
+}
+
+.loginbox>form .name>input[type="text"]:focus, .pass>input[type="password"]:focus{
+    height: 45px;
+    border-bottom: 3px solid white;
+}
+
+.loginbox>form input[type="submit"]{
+    margin-left: 5px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: rgb(175, 58, 58);
+    font-size: 17px;
+    color:white;
+    border-radius: 10px;
+}
+
+
+.loginbox>form input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: rgb(138, 43, 43);
+    
+}
+
+/*.loginbox>form>a>img{
+    height: 45px;
+    width: 50px;
+    padding:14px 30px;
+    margin-left: 25px;
+    border-radius:50%;
+}*/
+
+/*.loginbox>form>.social>a>img.face{
+    height: 45px;
+    width: 50px;
+    padding:14px 30px;
+    margin-left: 60px;
+    border-radius:50%;
+}
+
+.loginbox>form>.social>a>img.google{
+    height: 45px;
+    width: 50px;
+    padding:14px 25px;
+    margin-left: 30px;
+    border-radius:50%;
+}
+
+.loginbox>form>.social>span{
+    position:absolute;
+    margin-top: 30px;
+    color: #8c9999;
+}
+ 
+
+.loginbox>form>.social>a img:hover{
+    cursor: pointer;
+}
+
+.loginbox>form h3{
+    position: absolute;
+    margin-left: 40px;
+    padding-left: 130px;
+    padding-top: 15px;
+
+}
+*/
+.loginbox>form h4{
+    position: absolute;
+    display:block;
+    margin-top: 0px;
+    padding: 10px 0px;
+    color: #8c9999;
+    float: left;
+}
+
+.loginbox>form h4 a{
+    margin-left: 10px;
+    float: right;
+    font-size: 15px;
+}
+
+.loginbox>form a{
+    display: block;
+    float: left;
+    font-family: "san-serif";
+    text-decoration: none;
+    font-size: 15px;
+    color: #8c9999;
+    text-align:right;
+}
+
+.loginbox>form> a:hover{
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+
+.loginbox>form>h4>a:hover{
+    font-weight: 900;
+    color: white;
+}
+
+/* javascript */
+
+.loginbox>form>.name>#demo{
+    position: absolute;
+    margin-top:  -5px;
+    margin-left: 50%;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(175, 58, 58);
+
+}
+
+.loginbox>form>.pass>#demo1{
+    position: absolute;
+    margin-left: 50%;
+    margin-top: -10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(175, 58, 58);
+
+}

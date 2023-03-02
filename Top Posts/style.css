@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  @font-face{
+    font-family: Kaushan Script;
+    src: url("KaushanScript-Regular.ttf");
+  }
+
+  
+.head-wrapper {
+    background-color: #333333;
+  }
+  
+  .head-container {
+    color: #ffffff;
+    padding: 0px 15px;
+    width: 1320px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  .head-logo {
+    font-family: Kaushan Script;
+    font-weight: 100;
+    float: left;
+    margin-right: 10px;
+    padding: 0px 20px;
+    font-size: 34px;
+  }
+  
+  .head-logo a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .head-left {
+    float: left;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .head-right {
+    float: right;
+  }
+  
+  .menu {
+    float: right;
+  }
+  
+  .menu > ul > li {
+    list-style: none;
+    float: left;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 20px 10px;
+    text-decoration: none;
+    color: #8c9999;
+  }
+  
+  .menu li a:hover {
+    color: #ffffff;
+  }
+  
+  .search-bar {
+    float: left;
+    padding: 10px 0px;
+    margin-right: 16px;
+  }
+  
+  .login-btn {
+    float: right;
+    padding: 10px 0px;
+  }
+  
+  .login-btn a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(175, 58, 58);
+    border-radius: 6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    letter-spacing: 1px;
+  }
+  
+  .login-btn a:hover {
+    background-color: rgb(138, 43, 43);
+  }
+  
+  .search-bar input[type='text'] {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    background-image: url(../images/search.png);
+    background-position: 10px center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    padding-left: 35px;
+    font-size: 14px;
+    color: #ffffff;
+  }
+  
+  .submenu {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .submenu ul {
+    position: absolute;
+    list-style: none;
+    min-width: 300px;
+    background-color: #333333;
+    display: none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  .submenu:hover ul {
+    display: block;
+  }
+  
+  .submenu li:hover {
+    background-color: rgb(175, 58, 58);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  .drop img {
+    width: 12px;
+    padding-top: 4px;
+  }
+
+  .header{
+    margin-bottom: -40px;
+    margin-left: 20px;
+  }
+
+  .header h2{
+    font-family: Century;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 29px;
+  margin-left: 6px;
+  padding: 15px;
+  margin-top: 25px;
+  text-shadow: 2px 2px #7a7878;
+  }
+
+  .box {
+    position: relative;
+    float: left;
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+    margin-top: 60px;
+  }
+
+  .box:hover {
+    cursor: pointer;
+  }
+  
+  .box img {
+    width: 400px;
+    height: 300px;
+    border: 8px solid #222020ef;
+    border-radius: 8px;
+    box-shadow: 5px 10px 8px #6e6e6e;
+  }
+
+  .imgbtn {
+    float: left;
+    padding: 33px 10px;
+  }
+  
+  .imgbtn a {
+    margin-top: 0px;
+    padding: 8px 14px;
+    border-radius: 4px;
+    border: rgb(175, 58, 58);
+    background-color: rgb(175, 58, 58);
+    color: white;
+    box-shadow: 5px 10px 8px #6e6e6e;
+  }
+
+  .imgbtn a:hover{
+    background-color: rgb(138, 43, 43);
+  }
+  
+  .imgbtn a:first-child {
+    margin-right: 5px;
+  }
+
+  .cmt{
+    margin-top: 15px;
+    padding: 10px 10px;
+  }
+
+  .cmt>form input[type="text"]::placeholder{
+    color: white;
+  }
+
+  .cmt>form input[type="text"]{
+    border: 1px solid #6e6e6e;
+    color: white;
+    background-color: #585858bb;
+    height: 35px;
+    width: 220px;
+    outline: none;
+    box-shadow: 5px 10px 8px #6e6e6e;
+  }
+
+  .cmt>form input[type="text"]:hover{
+    border: 3px solid #6e6e6e;
+  }
+
+  .cmt>form input[type="text"]:focus{
+    border: 3px solid #6e6e6e;
+  }

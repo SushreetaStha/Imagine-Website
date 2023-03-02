@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@font-face {
+  font-family: Kaushan Script;
+  src: url('KaushanScript-Regular.ttf');
+}
+/*Nav-Bar*/
+
+.head-wrapper {
+  background-color: #333333;
+}
+
+.head-container {
+  color: #ffffff;
+  padding: 0px 15px;
+  width: 1320px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.head-logo {
+  font-family: Kaushan Script;
+  font-weight: 100;
+  float: left;
+  margin-right: 10px;
+  padding: 0px 20px;
+  font-size: 34px;
+}
+
+.head-logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.head-left {
+  float: left;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.head-right {
+  float: right;
+}
+
+.menu {
+  float: right;
+}
+
+.menu > ul > li {
+  list-style: none;
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  padding: 20px 10px;
+  text-decoration: none;
+  color: #8c9999;
+}
+
+.menu li a:hover {
+  color: #ffffff;
+}
+
+.search-bar {
+  float: left;
+  padding: 10px 0px;
+  margin-right: 16px;
+}
+
+.login-btn {
+  float: right;
+  padding: 10px 0px;
+}
+
+.login-btn a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(175, 58, 58);
+  border-radius: 6px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  padding: 8px 16px;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+}
+
+.login-btn a:hover {
+  background-color: rgb(138, 43, 43);
+}
+
+.search-bar input[type='text'] {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  background-image: url(../images/search.png);
+  background-position: 10px center;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  padding-left: 35px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Nav Bar */
+
+/* Dropdown */
+
+.submenu {
+  position: relative;
+  z-index: 1;
+}
+
+.submenu ul {
+  position: absolute;
+  list-style: none;
+  min-width: 300px;
+  background-color: #333333;
+  display: none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.submenu:hover ul {
+  display: block;
+}
+
+.submenu li:hover {
+  background-color: rgb(175, 58, 58);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.drop img {
+  width: 12px;
+  padding-top: 4px;
+}
+
+/* Dropdown */
+
+h3 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 29px;
+  margin-left: 6px;
+  padding: 15px;
+  margin-top: 25px;
+  text-shadow: 2px 2px #7a7878;
+}
+
+.design-container {
+  margin-top: 20px;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  margin-bottom: 8px;
+  background-color: #f4f4f4;
+  justify-content: space-between;
+}
+
+.u-profile {
+  display: flex;
+}
+
+.u-profile > img {
+  height: 100px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.users > div {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.desc > span,
+.sns > img {
+  padding: 1px;
+}
+
+#name {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#place {
+  color: #6e6e6e;
+}
+
+#job {
+  color: #6e6e6e;
+}
+
+.sns > img {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.sns {
+  display: flex;
+  align-items: center;
+}
+.sns > span {
+  color: #6e6e6e;
+  font-size: 13px;
+  margin-left: 4px;
+}
+
+#space {
+  margin-left: 120px;
+}
+
+#pic {
+  height: 200px;
+  width: 290px;
+  margin-left: 10px;
+}
+
+.pictures {
+  display: flex;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #333333;
+}
+
+.footer-wrapper {
+  color: #ffffff;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px 15px;
+  width: 1320px;
+}
+
+/* Footer */

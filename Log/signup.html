@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Signup Page</title>
+        <link rel="stylesheet" type="text/css" href="stylesign.css">
+    <body>
+        <div class="signupbox">
+            <p><a href="../index.html">Imagine</a></p>
+            <h1>Signup Here</h1>
+            <form onsubmit="return valid();"> 
+            <div class="name">              
+                <p>Username:</p>
+                <p id="demo"></p>
+                <input type="text" placeholder="Enter Userame" id="user">
+            </div>
+
+            <div class="mail">
+                <p>Email:</p>
+                <p id="demo1"></p>
+                <input type="email" placeholder="Email Address" id="mail">
+            </div>
+
+            <div class="pass">
+                <p>Password:</p>
+                <p id="demo2"></p>
+                <input type="password" placeholder="Enter Password" id="pw">
+            </div>
+
+            <div class="retype">
+                <p>Confirm Password:</p>
+                <p id="demo3"></p>
+                <input type="password" placeholder="Retype-Password" id="re"><br>
+            </div>
+
+                <button>Signup</button>
+            </form>
+        </div>
+        <script type="text/javascript">
+            function valid()
+            {
+                var user=document.getElementById("user").value;
+                var mail=document.getElementById("mail").value;
+                var pw=document.getElementById("pw").value;
+                var re=document.getElementById("re").value;
+
+                if(user=="" || mail=="" || pw=="" || re=="")
+                {
+                    document.getElementById("demo").innerHTML="*Please fill all this out.";
+                    return false;
+                }
+                else if(user.length<8)
+                {
+                    document.getElementById("demo").innerHTML="*Username should be atleast 8 characters.";
+                    return false;
+                    
+                }
+                else if(pw.length<10)
+                {
+                    document.getElementById("demo2").innerHTML="*Password should be atleast 10 characters.";
+                    return false;
+                }
+                else if(pw!=re)
+                {
+                    document.getElementById("demo3").innerHTML="*Password doesn't match.";
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
+    </body>
+    </head>
+</html>

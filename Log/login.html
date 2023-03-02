@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" type="text/css" href="stylelog.css">
+    <body>
+        <div class="loginbox">
+            <div class="logo">
+                <p><a href="../index.html">Imagine</a></p>
+            </div>
+            <h1>Login Here</h1>
+
+            <form onsubmit="return valid();">
+
+            <div class="name">
+                <p>Username:</p>
+                <p id="demo"></p>
+                <input type="text" placeholder="Enter Username" id="name" >
+            </div>
+
+            <div class="pass">
+                <p>Password:</p>
+                <p id="demo1"></p>
+                <input type="password" placeholder="Enter Password" id="pass" >
+
+            </div>
+
+                <input type="submit" value="Login"><br>
+                <a href="forgotpass.html">Forgot password?</a><br>
+                <h4>Not a member ?<a href="signup.html">Sign up</a></h4>
+
+            </form>
+        </div>
+
+        <script type="text/javascript">
+            function valid()
+            {
+                name=document.getElementById("name").value;
+                pass=document.getElementById("pass").value;
+                if(name=="" || pass=="")
+                {
+                    document.getElementById("demo").innerHTML="*Please fill all the fields";
+
+                    return false;
+                }
+                if(name.length<8)
+                {
+                    document.getElementById("demo").innerHTML="*Username should be atleast 8 characters";
+                    return false;
+                }
+                else if(pass.length<10)
+                {
+                    document.getElementById("demo1").innerHTML="*Password should be atleast 10 characters";
+                    return false;
+                }
+                else{
+                    return true;
+                }
+            }
+        </script>
+    </body>
+    </head>
+</html>
